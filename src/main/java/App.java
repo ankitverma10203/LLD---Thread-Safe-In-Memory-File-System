@@ -1,5 +1,3 @@
-package file-system;
-
 /**
  * Hello world!
  */

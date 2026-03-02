@@ -1,5 +1,8 @@
 package model;
 
+import java.util.HashMap;
+import java.util.Map;
+
 class Directory extends FileSystemElement {
   private Map<String, FileSystemElement> children;
 
@@ -11,12 +14,12 @@ class Directory extends FileSystemElement {
   public void addFile(String fileName) {
       if (children.containsKey(fileName)) return;
 
-      children.add(new File(fileName, this));
+      children.put(fileName, new File(fileName, this));
   }
 
   public void addDirectory(String directoryName) {
       if (children.containsKey(directoryName)) return;
       
-      children.add(new Directory(directoryName, this));
+      children.put(directoryName, new Directory(directoryName, this));
   }
 }
