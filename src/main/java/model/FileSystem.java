@@ -1,9 +1,13 @@
 package model;
 
 class FileSystem {
-    Directory root;
+  private final Directory root;
 
-    public FileSystem() {
-        root = new Directory("root", null);
-    }
+  public FileSystem() {
+    root = new Directory("root", null);
+  }
+
+  public Directory getRoot() {
+    return root;
+  }
 }
