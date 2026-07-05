@@ -1,6 +1,28 @@
 # In-Memory Thread-Safe File System
 
-## Overview
+Quickstart
+---------
+
+This repository contains a small thread-safe in-memory filesystem implemented in Java. A simple example application and unit tests were added to demonstrate and validate the API.
+
+To compile and run the example (requires a JDK):
+
+```sh
+mkdir -p out
+javac -d out src/main/java/model/*.java src/main/java/*.java
+java -cp out App
+```
+
+To run the unit tests with Maven (recommended):
+
+```sh
+mvn test
+```
+
+If Maven or the JDK are not installed on your machine you can run the example from an IDE (IntelliJ/VSCode) as well.
+
+Overview
+--------
 
 This project implements a simplified **in-memory file system** in Java that supports:
 
