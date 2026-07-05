@@ -1,6 +1,6 @@
 package model;
 
-class FileSystem {
+public class FileSystem {
   private final Directory root;
 
   public FileSystem() {
